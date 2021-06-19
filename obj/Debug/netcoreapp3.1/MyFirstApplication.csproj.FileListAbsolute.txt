@@ -1,0 +1,13 @@
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\bin\Debug\netcoreapp3.1\MyFirstApplication.exe
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\bin\Debug\netcoreapp3.1\MyFirstApplication.deps.json
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\bin\Debug\netcoreapp3.1\MyFirstApplication.runtimeconfig.json
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\bin\Debug\netcoreapp3.1\MyFirstApplication.runtimeconfig.dev.json
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\bin\Debug\netcoreapp3.1\MyFirstApplication.dll
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\bin\Debug\netcoreapp3.1\MyFirstApplication.pdb
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\obj\Debug\netcoreapp3.1\MyFirstApplication.csproj.AssemblyReference.cache
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\obj\Debug\netcoreapp3.1\MyFirstApplication.AssemblyInfoInputs.cache
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\obj\Debug\netcoreapp3.1\MyFirstApplication.AssemblyInfo.cs
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\obj\Debug\netcoreapp3.1\MyFirstApplication.csproj.CoreCompileInputs.cache
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\obj\Debug\netcoreapp3.1\MyFirstApplication.dll
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\obj\Debug\netcoreapp3.1\MyFirstApplication.pdb
+C:\Users\Ethan\source\VisualStudioRepos\MyFirstApplication\obj\Debug\netcoreapp3.1\MyFirstApplication.genruntimeconfig.cache
