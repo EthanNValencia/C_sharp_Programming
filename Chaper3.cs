@@ -107,6 +107,15 @@ namespace MyFirstApplication
             double price = 1089.30;
             Console.WriteLine("\nC# can display a double as a currency.");
             Console.WriteLine("The price is {0:C}.", price);
+
+            // Table 3-13, og 115
+            Console.WriteLine("\nHere are some more interesting numerical formatting outputs.");
+            Console.WriteLine("{0:c}", 26685.79);
+            Console.WriteLine("{0:c}", -2);
+            Console.WriteLine("{0:c}", 38.8);
+            Console.WriteLine("{0:F4}", 50);
+            Console.WriteLine("{0:F0}{1}", 50, 20);
+            Console.WriteLine("Carpet{0:F0} is {1:C}", 9, 14);
         }
     }
 }
