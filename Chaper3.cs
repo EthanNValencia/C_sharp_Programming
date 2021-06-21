@@ -68,7 +68,45 @@ namespace MyFirstApplication
                                 // Even though the compound operation is multiplication,
                                 // it is executed last. Compound operations are always
                                 // the final operation -- regardless of PEMDAS. 
-            Console.WriteLine(total); 
+            Console.WriteLine(total);
+
+
+            // Example 3-13, pg 110
+            int answer = 100;
+            answer += 50 * 3 / 25 - 4; // 100 + (150 / 25 - 4) == 100 + (6 - 4) == 100 + 2 == 102
+            Console.WriteLine("100 += 50 * 3 / 25 - 4 == " + answer);
+            moreMixedExpressions();
+        }
+        public static void moreMixedExpressions()
+        {
+            // Example 3-14, pg 112
+            double answer;
+            answer = 10 / 3; // answer is 3, not 3.33 (because integer division took place)
+            Console.WriteLine(answer);
+            // Example 3-15, pg 112
+            int value1 = 440,
+                anotherNumber = 70;
+            double value2 = 100.60,
+                   anotherDouble = 100.999;
+            value1 = (int) value2; // A double cannot be assigned to an int without casting. 
+            value2 = anotherNumber; // A double be assigned to an integer without casting. 
+
+            // Example 3-16, pg 113
+            int exam1 = 86,
+                exam2 = 92,
+                exam3 = 91;
+            double examAverage;
+            examAverage = (exam1 + exam2 + exam3) / 3;
+            Console.WriteLine("\n(exam1 + exam2 + exam3) / 3 is " + examAverage);
+            examAverage = (exam1 + exam2 + exam3) / 3.0;
+            Console.WriteLine("(exam1 + exam2 + exam3) / 3.0 is " + examAverage);
+            examAverage = (exam1 + exam2 + exam3) / (double) 3;
+            Console.WriteLine("(exam1 + exam2 + exam3) / (double) 3 is " + examAverage);
+
+            // Example 3-18, pg 114
+            double price = 1089.30;
+            Console.WriteLine("\nC# can display a double as a currency.");
+            Console.WriteLine("The price is {0:C}.", price);
         }
     }
 }
