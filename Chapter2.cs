@@ -27,15 +27,16 @@ namespace MyFirstApplication
     {
         // readonly double five = 5;
 
-        static void Main(string[] args)
+        public static void PracticingWritingToConsole()
         {
             /*
              * The area between the brackets here is the definition of the method. 
              */
+            Console.WriteLine("Chapter 2");
             Console.WriteLine("Hello World! This is my first C# program.");
             Console.WriteLine("\tProgramming can be \n\tFUN!");
             Console.Write("Hello");
-            Console.Write(" there.");
+            Console.Write(" there.\n");
             //Console.WriteLine(Program.five);
         }
     }

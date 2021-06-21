@@ -1,0 +1,13 @@
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\C_sharp_Programming.exe
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\C_sharp_Programming.deps.json
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\C_sharp_Programming.runtimeconfig.json
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\C_sharp_Programming.runtimeconfig.dev.json
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\C_sharp_Programming.dll
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\C_sharp_Programming.pdb
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.AssemblyInfoInputs.cache
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.AssemblyInfo.cs
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.csproj.CoreCompileInputs.cache
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.dll
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.pdb
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.genruntimeconfig.cache
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.csproj.AssemblyReference.cache
