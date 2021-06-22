@@ -24,25 +24,27 @@ namespace C_sharp_Programming
         private double roomWidth;
         private double carpetPrice;
         private string name;
+        private const double FT_TO_INCHES = 12;
+        private const double SQFT_TO_SQYRD = 9;
 
         public Chapter3_Carpet_Calculator(string name, double carpetPrice)
         {
             this.name = name;
-            roomLength = roomLengthFeet * 12 + roomLengthInches;
-            roomWidth = roomWidthFeet * 12 + roomWidthInches;
-            carpetPrice = DeterminePrice(carpetPrice);
+            roomLength = roomLengthFeet * FT_TO_INCHES + roomLengthInches;
+            roomWidth = roomWidthFeet * FT_TO_INCHES + roomWidthInches;
+            this.carpetPrice = DeterminePrice(carpetPrice);
             Console.WriteLine("Room length (inches): " + roomLength + " Room width (inches): " + roomWidth);
-            Console.WriteLine(DetermineSquareFeet());
-            Console.WriteLine(DetermineSquareYards());
-            Console.WriteLine("The price for " + this.name + " is {0:c}.", carpetPrice);
+            // Console.WriteLine(DetermineSquareFeet());
+            // Console.WriteLine(DetermineSquareYards());
+            Console.WriteLine("The price for " + this.name + " is {0:c}.", this.carpetPrice);
         }
         public double DetermineSquareFeet()
         {
-            return (roomLength / (double) 12) * (roomWidth / (double) 12); 
+            return (roomLength / FT_TO_INCHES) * (roomWidth / FT_TO_INCHES); 
         }
         public double DetermineSquareYards()
         {
-            return DetermineSquareFeet() / (double) 9;
+            return DetermineSquareFeet() / SQFT_TO_SQYRD;
         }
         public double DeterminePrice(double price)
         {

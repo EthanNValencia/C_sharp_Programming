@@ -115,7 +115,7 @@ namespace MyFirstApplication
             Console.WriteLine("{0:c}", 38.8);
             Console.WriteLine("{0:F4}", 50);
             Console.WriteLine("{0:F0}{1}", 50, 20);
-            Console.WriteLine("Carpet{0:F0} is {1:C}", 9, 14);
+            Console.WriteLine("Carpet{0:F0} is {1:C}\n", 9, 14);
         }
     }
 }
