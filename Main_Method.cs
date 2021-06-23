@@ -16,7 +16,7 @@ namespace C_sharp_Programming
             new Chapter3_Carpet_Calculator("econ", 15.95);
 
             Chapter4.SquareExample();
-            Console.WriteLine("You travled 120 miles with 3 gallons, your MPG is " + Chapter4.CalculateMilesPerGallon(120, 3));
+            Console.WriteLine("You travled 120 miles with 3 gallons, your MPG is {0:N2}",  Chapter4.CalculateMilesPerGallon(120, 3));
         }
     }
 
