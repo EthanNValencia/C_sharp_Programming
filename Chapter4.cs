@@ -96,5 +96,13 @@ namespace C_sharp_Programming
             Console.WriteLine("Largest value between {0} and {1} is {2}", aValue, bValue, Math.Max(aValue, bValue));
             return; // While the return is option in this case, some people think it makes the code more readable. 
         }
+        public static void MoreMathClassExamples() // Example from pg 158
+        {
+            double aValue = 78.926;
+            double result1, result2;
+            result1 = Math.Floor(aValue);
+            result2 = Math.Sqrt(aValue);
+            Console.WriteLine("aValue rounded to two decimal places is {0}", Math.Round(aValue, 2));
+        }
     }
 }
