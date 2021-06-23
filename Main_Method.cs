@@ -17,6 +17,10 @@ namespace C_sharp_Programming
 
             Chapter4.SquareExample();
             Console.WriteLine("You travled 120 miles with 3 gallons, your MPG is {0:N2}",  Chapter4.CalculateMilesPerGallon(120, 3));
+            Chapter4.PrintExample();
+            Chapter4.CastingCharExample();
+            // Chapter4.UsingReadInAWriteLine();
+            Chapter4_AgeIncrementer.IncrementAge();
         }
     }
 
