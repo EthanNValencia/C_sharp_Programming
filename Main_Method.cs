@@ -12,10 +12,11 @@ namespace C_sharp_Programming
             Chapter2.PracticingWritingToConsole();
             Chaper3.PracticingAddition();
 
-            Chapter3_Carpet_Calculator bestCarpet = new Chapter3_Carpet_Calculator("best" , 27.95); 
-            Chapter3_Carpet_Calculator econCarpet = new Chapter3_Carpet_Calculator("econ", 15.95);
+            new Chapter3_Carpet_Calculator("best" , 27.95); 
+            new Chapter3_Carpet_Calculator("econ", 15.95);
 
             Chapter4.SquareExample();
+            Console.WriteLine("You travled 120 miles with 3 gallons, your MPG is " + Chapter4.CalculateMilesPerGallon(120, 3));
         }
     }
 
