@@ -93,7 +93,8 @@ namespace C_sharp_Programming
             int result;
             result = Math.Max(aValue, bValue); // result == 896 (896 is larger than 200)
             result += bValue * Math.Max(aValue, bValue) - aValue; // Result == 896 + (896 * 896 - 200) == 803512
-            Console.WriteLine("Largest value between {0} and {1} is {2}.", )
+            Console.WriteLine("Largest value between {0} and {1} is {2}", aValue, bValue, Math.Max(aValue, bValue));
+            return; // While the return is option in this case, some people think it makes the code more readable. 
         }
     }
 }
