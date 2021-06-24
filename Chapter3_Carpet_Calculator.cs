@@ -28,6 +28,7 @@ namespace C_sharp_Programming
         private const double SQFT_TO_SQYRD = 9;
 
         /*
+         * --VARIABLE PROPERTY--
          * The variable property, by convention, should be spelled similar to the instance variable,
          * with the expection of it being capital case. Example, so to define a numberOfDouble property 
          * it would be NumberofDouble. 
@@ -43,8 +44,16 @@ namespace C_sharp_Programming
                 name = value;
             }
         }
+        /*
+         * --VARIABLE PROPERTY--
+         * You do not need to define both the set and get properties. You can use one or the other 
+         * without errors. 
+         * In the Main_Method.cs I used this property method to change the name variable. 
+         */
 
-
+        /*
+         * With the Variable Properties getter and setter methods are not very necessary. 
+         */
         public double GetRoomLength() //  Example 4-20, pg 172
         {
             /*
@@ -74,7 +83,7 @@ namespace C_sharp_Programming
             Console.WriteLine("Room length (inches): " + roomLength + " Room width (inches): " + roomWidth);
             // Console.WriteLine(DetermineSquareFeet());
             // Console.WriteLine(DetermineSquareYards());
-            Console.WriteLine("The price for " + this.name + " is {0:c}.", this.carpetPrice);
+            // Console.WriteLine("The price for " + this.name + " is {0:c}.", this.carpetPrice);
         }
         public double DetermineSquareFeet()
         {
@@ -87,6 +96,19 @@ namespace C_sharp_Programming
         public double DeterminePrice(double price)
         {
             return price * DetermineSquareYards();
+        }
+
+        /*
+         * All classes inherit certain methods from the base object method. pg 177
+         * Inherited classes are:
+         * 1. ToString()
+         * 2. Equals()
+         * 3. GetType()
+         * 4. GetHashCode()
+         */
+        public override string ToString() // Example 4-26, pg 177
+        {
+            return "The price for " + this.Name + " is " + this.carpetPrice;
         }
     }
 }
