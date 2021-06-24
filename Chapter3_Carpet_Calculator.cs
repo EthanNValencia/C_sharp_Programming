@@ -105,8 +105,19 @@ namespace C_sharp_Programming
          * 2. Equals()
          * 3. GetType()
          * 4. GetHashCode()
+         * 
+         * When overriding a method in C# the override keyword is used in the method 
+         * signature. It doesn't use the @override like in Java. It makes for cleaner
+         * looking code, but it doesn't stand out as much. I need to make sure I look
+         * more carefully at method signatures, because it would be easy for me to 
+         * overlook the override keyword usage. 
          */
         public override string ToString() // Example 4-26, pg 177
+            /*
+             * The ToString() method functions pretty much the same as in Java. Sometimes
+             * it is automatically called depending on how the Object is passed into a 
+             * method. 
+             */
         {
             return "The price for " + this.Name + " is " + this.carpetPrice;
         }
