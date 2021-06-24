@@ -27,6 +27,44 @@ namespace C_sharp_Programming
         private const double FT_TO_INCHES = 12;
         private const double SQFT_TO_SQYRD = 9;
 
+        /*
+         * The variable property, by convention, should be spelled similar to the instance variable,
+         * with the expection of it being capital case. Example, so to define a numberOfDouble property 
+         * it would be NumberofDouble. 
+         */
+        public string Name // This is called a property, pg 173
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+
+        public double GetRoomLength() //  Example 4-20, pg 172
+        {
+            /*
+             * This is a standard accessor/getter method. It simply returns the private double roomLength, 
+             * class variable. This functions the same as Java. 
+             */
+            return roomLength;
+        }
+
+        public void SetRoomLength(double setLength) // Example 4-21, pg 172
+        {
+            /*
+             * This is a standard mutator/setter method. It simply sets the class variable roomLength
+             * to the method parameter variable. Pretty much exactly like Java. 
+             * A mutator method can also be overloaded. There can be several mutator methods that are
+             * of the same method name, but have different parameters. 
+             */
+            this.roomLength = setLength;
+        }
+
         public Chapter3_Carpet_Calculator(string name, double carpetPrice)
         {
             this.name = name;

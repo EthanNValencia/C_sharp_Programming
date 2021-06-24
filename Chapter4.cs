@@ -98,6 +98,15 @@ namespace C_sharp_Programming
         }
         public static void MoreMathClassExamples() // Example from pg 158
         {
+            /*
+             * Note: Variable Scope, pg 162
+             * A variable a specific scope in which it can be used. This is the area or space
+             * that the variable can be accessed. This method has double aValue. aValue is a method
+             * defined scope. It does not exist and cannot be access outside of this method block. 
+             * There are many different levels of scopes, just like in Java. A common one is a 
+             * class wide scope. This is when a variable is a class variable and it can be used 
+             * from anywhere within the specific class it inhabits. 
+             */
             double aValue = 78.926;
             double result1, result2;
             result1 = Math.Floor(aValue);
