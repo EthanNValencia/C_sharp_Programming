@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 /* 
+ * This is the first thing in C# that I have found to be impressive. Really cool
+ * topic. 
+ * 
  * Types of paramerters in C#, pg 183
  * 1. ref
  * 2. out
