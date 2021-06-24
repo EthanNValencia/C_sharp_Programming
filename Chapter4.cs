@@ -113,5 +113,13 @@ namespace C_sharp_Programming
             result2 = Math.Sqrt(aValue);
             Console.WriteLine("aValue rounded to two decimal places is {0}", Math.Round(aValue, 2));
         }
+
+        /*
+         * Types of paramerters in C#, pg 183
+         * 1. ref
+         * 2. out
+         * 3. params (discussed in chapter 7 with arrays)
+         */
+
     }
 }
