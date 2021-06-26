@@ -123,3 +123,64 @@ namespace C_sharp_Programming
 
     }
 }
+
+/*
+ * Quick Review pg 197
+ * 1.  Methods are the members of a class that describe the behavior of the data. 
+ * 2.  The Main() method is required for both console and Windows applications. 
+ * 3.  Main() should include the static keyword. 
+ * 4.  The heading to a method can consist of modifiers, a return type, a method
+ *     identifier, and parameters. The body of the method is enclosed in curly 
+ *     braces. 
+ * 5.  When the static modifier is included with a method, it becomes a class method. 
+ * 6.  Instances methods require that an object be instantiated before they access 
+ *     the method. 
+ * 7.  Private members are accesible only within the body of the class in which they
+ *     they are declared. 
+ * 8.  Often in object-oriented development, data is defined with a private modifier, 
+ *     and methods that access the data are declared to have public access. 
+ * 9.  The return type identifies what type of value is returned when the method is 
+ *     completed. Any of the predefined or valid user-defined types can be returned. 
+ * 10. The void keyword specifies that the method does not return a value. 
+ * 11. Many programmers employ the standard convention of using an action verb phrase 
+ *     to name methods. 
+ * 12. Formal parameters appear in the heading of a method. Actual arguments appear 
+ *     in the call. The actual arguments are the actual that is sent to the method. 
+ * 13. The signature of a method consits of the name of the method, modifers, and 
+ *     the types of its formal parameters. It does not include the return type. 
+ * 14. Overloaded methods are methods with the same name but a different number or 
+ *     type of parameter. 
+ * 15. The ReadLine() method returns all characters up to the current end-of-line 
+ *     terminator, the Enter key. It returns a string that must be parsed into a 
+ *     number before the value can be used in arithmetic. 
+ * 16. Variables declared in the Main() method and other methods are considered 
+ *     local variables and are visible only inside the body of the method in which 
+ *     they are declared. 
+ * 17. Constructors are special methods that create instances of a class. Constructors 
+ *     do not return a value, but you should not include the keyword void. 
+ * 18. Constructors use the same identifier as the class name. The keyword new is an 
+ *     operator that calls constructor methods. 
+ * 19. Use public access with constructors and most other methods. Use the private access 
+ *     modifier with data members. 
+ * 20. The default constructor has no body and is automatically created if you do not 
+ *     write one. If you write even one constructor, you lose the default constructor 
+ *     and have to write it. 
+ * 21. Accessors are methods that access the value of a private data member without changing 
+ *     it. Accessors are also referred to as getter methods. 
+ * 22. Mutators are used to change the current state of object members' data. Mutator methods 
+ *     are also referred to as setters.
+ * 23. A property looks like a data field and provides a way to set or get private member 
+ *     data. You can define the set without the get or vice versa. It is not necessary to 
+ *     include both. 
+ * 24. If a value is being returned from a method, such as with an expression or output statement, 
+ *     there must be a location in which the value can be accepted when the method is finished. 
+ *     The call actually may appear anywhere a compatible value of that type can be placed.
+ * 25. To call nonvalue-returning methods, simply type the method's name. If it is a static method, 
+ *     qualify it with the class name. If it is an instance method, qualify the identitifer with an 
+ *     object. If the method has parameters, the call includes actual arguments inside the parentheses, 
+ *     without the type. 
+ * 26. C# offers both call by value and call by reference. Call by value is the default if no keyword 
+ *     is added in the heading. Call by reference is possible through using the ref and out keywords. 
+ *     They must appear both in the heading and in the call. ref requires that the argument be initialized 
+ *     before it is sent. 
+ */

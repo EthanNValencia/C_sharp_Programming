@@ -11,7 +11,7 @@ namespace C_sharp_Programming
         {
             /*
             Chapter2.PracticingWritingToConsole();
-            Chaper3.PracticingAddition();
+            Chapter3.PracticingAddition();
 
             new Chapter3_Carpet_Calculator("best" , 27.95); 
             new Chapter3_Carpet_Calculator("econ", 15.95);
@@ -32,7 +32,9 @@ namespace C_sharp_Programming
             ccc.SetNoOfSquareYards(40, 12);
             Console.WriteLine(ccc.ToString());
             */
-            Chapter4_ParameterClass.RunParameterClass();
+            // Chapter4_ParameterClass.RunParameterClass();
+            // Chapter4_RealEstateApp.RunApp();
+            Chapter4_ProgrammingExercises.RunExercises();
         }
     }
 
