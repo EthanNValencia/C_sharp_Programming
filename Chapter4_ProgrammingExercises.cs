@@ -71,6 +71,11 @@ namespace C_sharp_Programming
         double overallGPA;
         string classification;
         string major; 
+        
+        public Chapter4_Exercise3_Student(string firstName, string lastName, double overallGPA, string classification, string major)
+        {
+
+        }
     }
     class Chapter4_Exercise3_DisplayInfo
     {
