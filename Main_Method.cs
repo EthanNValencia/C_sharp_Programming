@@ -31,10 +31,13 @@ namespace C_sharp_Programming
             Chapter4_CarpetCalculator ccc = new Chapter4_CarpetCalculator(500, 32);
             ccc.SetNoOfSquareYards(40, 12);
             Console.WriteLine(ccc.ToString());
-            */
-            // Chapter4_ParameterClass.RunParameterClass();
-            // Chapter4_RealEstateApp.RunApp();
+            
+            Chapter4_ParameterClass.RunParameterClass();
+            Chapter4_RealEstateApp.RunApp();
             Chapter4_ProgrammingExercises.RunExercises();
+
+            */
+            Chapter4_Exercise3_DisplayInfo.CreateStudent();
         }
     }
 
