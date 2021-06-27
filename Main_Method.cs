@@ -35,9 +35,12 @@ namespace C_sharp_Programming
             Chapter4_ParameterClass.RunParameterClass();
             Chapter4_RealEstateApp.RunApp();
             Chapter4_ProgrammingExercises.RunExercises();
-
-            */
             Chapter4_Exercise3_DisplayInfo.CreateStudent();
+            
+            Chapter4_Exercise4_HouseCalculator houseCalc = new Chapter4_Exercise4_HouseCalculator();
+            Console.WriteLine(houseCalc.ToString());
+            */
+            Chapter4_Example5_CoinCalculator.calculateChange();
         }
     }
 

@@ -63,11 +63,6 @@ namespace C_sharp_Programming
      * properties for each of the data items. Create a second class that instantiates the first
      * class with inforamtion about yourself. In the second class, create a class method that
      * displays your name and GPA. 
-     * 
-     * Create a class representing a student. Create a second class that instantiates the first
-     * class with inforamtion about yourself. In the second class, create a class method that
-     * displays your name and GPA. 
-     * 
      */
     class Chapter4_Exercise3_Student
     {
@@ -169,6 +164,123 @@ namespace C_sharp_Programming
             Console.WriteLine("Enter major: ");
             student.Major = Console.ReadLine();
             Console.WriteLine("Your name is " + student.FirstName + " " + student.LastName + "\nYour classification is " + student.Classification + " and your major is " + student.Major + "\nYour GPA is " + student.OverallGPA);
+        }
+    }
+
+    /*
+     * Exercise 4, pg 206
+     * Design an application using methods that display the number of square feet in a house. 
+     * Allow the user to enter values for the length and width of the house. Use class methods
+     * for entering values, performing the computation, and displaying the results. The results
+     * should include the original measurements entered by the user. 
+     */
+    class Chapter4_Exercise4_HouseCalculator
+    {
+        private int lengthFT;
+        private int widthFT;
+        private int squareFT;
+
+        public Chapter4_Exercise4_HouseCalculator()
+        {
+            string input;
+            Console.Write("Please input the length of the house: ");
+            input = Console.ReadLine();
+            this.lengthFT = int.Parse(input);
+            Console.Write("Please input the width of the house: ");
+            input = Console.ReadLine();
+            this.widthFT = int.Parse(input);
+            squareFT = this.lengthFT * this.widthFT;
+        }
+
+        public override string ToString()
+        {
+            return "For a house with the dimensions of " + this.lengthFT + " by " + this.widthFT + " the total sqft is " + this.squareFT + ".";
+        }
+
+        public int LengthFT
+        {
+            get
+            {
+                return lengthFT;
+            }
+        }
+        public int WidthFT
+        {
+            get
+            {
+                return widthFT;
+            }
+        }
+        public int SquareFT
+        {
+            get
+            {
+                return squareFT;
+            }
+        }
+    }
+
+    /*
+     * Exercise 5, pg 206
+     * Write a program that converts temperture given in celsius to farenheit. Allow the user
+     * to enter values for the original celsius value. Display the original temperataure and
+     * the formatted convereted value. Use appropriate methods for entering, calculating, and
+     * outputting results. 
+     */
+    class Chapter4_Example5_TemperatureCalculator
+    {
+
+    }
+
+    /*
+     * Exercise 6, pg 206
+     * Write a program that prints the number of quarters, dimes, nickels, and pennies that a
+     * customer should get back as change. Allow the user to enter any value less than $1.00
+     * in a method. Call on seperate methods for each of the calculations. 
+     */
+    class Chapter4_Example5_CoinCalculator
+    {
+        const int QUARTER = 25;
+        const int DIME = 10;
+        const int NICKEL = 5;
+        const int PENNY = 1;
+        static int quarter, dime, nickel, penny, centInput;
+        static string input;
+        static Boolean finished = false; 
+
+        public static void calculateChange()
+        {
+            Console.Write("Input amount of cents (less than 100): ");
+            input = Console.ReadLine();
+            centInput = int.Parse(input);
+
+            Check(ref quarter, QUARTER);
+            Check(ref dime, DIME);
+            Check(ref nickel, NICKEL);
+            Check(ref penny, PENNY);
+
+            Console.WriteLine("For " + input + " cents your change will be:\n" +
+                              "Quarters: " + quarter + "\n" + 
+                              "Dimes: " + dime + "\n" +
+                              "Nickels: " + nickel + "\n" +
+                              "Pennies: " + penny);
+        }
+
+        public static void Check(ref int countCoinType, int coinCheck) // Cool use of the ref type implemented here. 
+        {
+            while (finished == false)
+            {
+                if (centInput - coinCheck >= 0)
+                {
+                    countCoinType++;
+                    centInput -= coinCheck;
+                }
+                else
+                {
+                    finished = true;
+                }
+            }
+            finished = false;
         }
     }
 }
