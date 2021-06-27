@@ -40,7 +40,9 @@ namespace C_sharp_Programming
             Chapter4_Exercise4_HouseCalculator houseCalc = new Chapter4_Exercise4_HouseCalculator();
             Console.WriteLine(houseCalc.ToString());
             */
-            Chapter4_Example5_CoinCalculator.calculateChange();
+            Chapter4_Example5_TemperatureCalculator.CalculateTemperature(); 
+
+            // Chapter4_Example6_CoinCalculator.calculateChange();
         }
     }
 

@@ -229,7 +229,14 @@ namespace C_sharp_Programming
      */
     class Chapter4_Example5_TemperatureCalculator
     {
-
+        public static void CalculateTemperature()
+        {
+            Console.Write("Provide temperature in Celsius: ");
+            string input = Console.ReadLine();
+            double celsius = double.Parse(input);
+            double farenheit = (celsius * 9 / 5) + 32;
+            Console.WriteLine("{0:f1} celsius = {1:f1} farenheit", celsius, farenheit);
+        }
     }
 
     /*
@@ -238,7 +245,7 @@ namespace C_sharp_Programming
      * customer should get back as change. Allow the user to enter any value less than $1.00
      * in a method. Call on seperate methods for each of the calculations. 
      */
-    class Chapter4_Example5_CoinCalculator
+    class Chapter4_Example6_CoinCalculator
     {
         const int QUARTER = 25;
         const int DIME = 10;
