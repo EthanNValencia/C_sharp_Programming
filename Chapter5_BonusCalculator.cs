@@ -16,15 +16,18 @@ namespace C_sharp_Programming
     {
         public void checkBonus()
         {
-            Console.WriteLine("What was your gross sales?");
+            decimal bonus = 0m;
+            Console.Write("What was your gross sales? ");
             string input = Console.ReadLine();
             if(Decimal.Parse(input) > 499999.99m)
             {
                 Console.WriteLine("Congrats you earned the bonus!");
+                bonus = 1000m;
             } else if (Decimal.Parse(input) < 499999.99m)
             {
                 Console.WriteLine("You did not earn the bonus this year.");
             }
+            Console.WriteLine("Your bonus is: {0:C}", bonus);
         }
     }
 }
