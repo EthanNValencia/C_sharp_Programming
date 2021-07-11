@@ -147,6 +147,7 @@ namespace C_sharp_Programming
                 theLargestValue = valueTwo;
             } 
             
+
             if (valueOne == valueTwo)
             {
                 Console.WriteLine("They are both equal. {0} is equal to {1}.", valueOne, valueTwo);
@@ -155,5 +156,10 @@ namespace C_sharp_Programming
                 Console.WriteLine("{0} is the greatest value between {1} and {2}.", theLargestValue, valueOne, valueTwo);
             }
         }
+        /*
+         * In C# the if-else statements work the same as in Java, so I don't see a big need to
+         * go over things that I already know. I'll continue reading and adding when I find something
+         * that is different or new. 
+         */
     }
 }
