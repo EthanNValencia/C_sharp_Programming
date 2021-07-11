@@ -52,7 +52,88 @@ namespace C_sharp_Programming
             {
                 Console.WriteLine("Your exam score was less than 50. You must do better.");
             }
+            /*
+             * In a conditional statement there are three basic requires: Operand - Operator - Operand
+             * Ex: 4 < 5 
+             * The 4 and 5 are the operands. 
+             * This is the same as an arithmetic expression, so it is easy to remember. 
+             * Devising a conditional statement is simply. Simple guide is to ask, 
+             * what is being compared (operand)? How are they being compared (operator)? 
+             */
+            Console.WriteLine("25 == Math.Pow(5,2) is evaluated to {0}", 25 == Math.Pow(5,2));
+            /*
+             * Convention pg 213
+             * When comparing two values, if one operand is a literal and one is a variable, then
+             * it is convetion to place the variable as the first operand. 
+             * Ex: thisIsAVariable < 25
+             */
+            double aValue = 10.0 / 3.0;
+            Console.WriteLine("{0} == {1} evaluates to {2}", aValue, 3.33333333, aValue == 3.33333333);
+            /*
+             * The above two lines demonstrates how using doubles and floats in equality statements should
+             * probably be avoided. Floating point and double division does not produce a finite number. 
+             */
+            Console.WriteLine("{0} == {1} evaluates to {2}", "cs158", "CS158", "cs158" == "CS158"); // Example 5-2, pg 213
+            /*
+             * Like Java all characters have a unicode value. 5-2 evaluates to false because C and c both have different
+             * unicode values. Once a location if inequality is discovered, the assessment ends, and is determined to 
+             * be false. No more comparisons are required. 
+             * Unlike Java, strings can simply be compared by using the ==. The above WriteLine would cause an error, 
+             * because Java requires the .equals() method call when comparing strings. C# is a little easier in this
+             * regard. String operands cannot be comapred using relational operators: <,>,>=,<=
+             */
 
+            /*
+             * Avoiding difficult to read syntax pg 215
+             * (examScore >= 90) and (examScore > 89) are effectively the same, however it could be argued
+             * that the first statement is more difficult to read than the second statement. 
+             * Personally, I never really thought much about the difficult associated with these two
+             * statements, but it is true that the second statement probably is easier to read. 
+             */
+
+            // Example 5-4, pg 215
+            aValue = 100; // int
+            int bValue = 1000;
+            char cValue = 'A';
+            string vValue = "CS158";
+            decimal money = 50.22m;
+            double dValue = 50.22;
+
+            /*
+             * (money == 100.00) will produce an error, because money is a decimal. Not a double. 
+             * decimal cannot be compared with a double
+             * decimal cannot be compared with an int
+             * int cannot be compared with a string
+             */
+            Console.WriteLine("{0} == {1} evaluates to {2}", money, 50.22m, money == 50.22m);
+            Console.WriteLine("{0} < {1} evaluates to {2}", cValue, 'F', cValue < 'F'); // 'F' has a larger unicode value than 'A'
+
+            /*
+             * Logical Operators in C# pg 216-218
+             * &, &&, |, ||, and !
+             * 
+             * AND is &&        OR IS ||
+             * 
+             * With && both sides of the expression must evaluate to true in order to be true. 
+             * With || one side must evaluate to true in order to be true. They conduct short-
+             * circuit valuations. This means that once enough information is processed to
+             * determine whether the statement is true or false, then evaluation ends at that 
+             * point. 
+             * 
+             * ! is the logical negation operator
+             * 
+             * !true is false, !false is true
+             * 
+             * & | conduct the same evaluations, but they do not do short-circuit evaluations. 
+             * They evaluate the entire statement. 
+             */ 
+        }
+        public void example56(int examScore) // example 5-6, pg 222
+        {
+            if (examScore > 89)
+            {
+                Console.WriteLine("Congrats, your grade is 90 or higher!");
+            }
         }
     }
 }
