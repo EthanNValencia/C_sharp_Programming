@@ -135,5 +135,25 @@ namespace C_sharp_Programming
                 Console.WriteLine("Congrats, your grade is 90 or higher!");
             }
         }
+
+        public void largestValue(int valueOne, int valueTwo)
+        {
+            int theLargestValue = 0;
+            if (valueOne > valueTwo)
+            {
+                theLargestValue = valueOne;
+            } else if (valueOne < valueTwo)
+            {
+                theLargestValue = valueTwo;
+            } 
+            
+            if (valueOne == valueTwo)
+            {
+                Console.WriteLine("They are both equal. {0} is equal to {1}.", valueOne, valueTwo);
+            } else if (valueOne != valueTwo)
+            {
+                Console.WriteLine("{0} is the greatest value between {1} and {2}.", theLargestValue, valueOne, valueTwo);
+            }
+        }
     }
 }

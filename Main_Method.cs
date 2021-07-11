@@ -47,9 +47,10 @@ namespace C_sharp_Programming
             ch5.gradePointAverage();
             ch5.example56(90);
 
-            Chapter5_BonusCalculator bonusCalculator = new Chapter5_BonusCalculator();
-            bonusCalculator.checkBonus();
-
+            // Chapter5_BonusCalculator bonusCalculator = new Chapter5_BonusCalculator();
+            // bonusCalculator.checkBonus();
+            ch5.largestValue(5, 10);
+            ch5.largestValue(10, 10);
 
         }
     }
