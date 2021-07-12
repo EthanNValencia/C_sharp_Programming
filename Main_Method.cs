@@ -51,6 +51,8 @@ namespace C_sharp_Programming
             // bonusCalculator.checkBonus();
             ch5.largestValue(5, 10);
             ch5.largestValue(10, 10);
+            ch5.switchStatement("MI");
+            ch5.switchStatement("FL");
 
         }
     }

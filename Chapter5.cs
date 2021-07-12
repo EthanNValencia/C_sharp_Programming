@@ -161,5 +161,24 @@ namespace C_sharp_Programming
          * go over things that I already know. I'll continue reading and adding when I find something
          * that is different or new. 
          */
+
+        public void switchStatement(String stateIni)
+        {
+            switch (stateIni)
+            {
+                case "AL": Console.WriteLine("Alabama");
+                    break;
+                case "FL": Console.WriteLine("Florida");
+                        break;
+                case "GA": Console.WriteLine("Georgia");
+                        break;
+                case "IL": Console.WriteLine("Illinois");
+                    break;
+                case "KY": Console.WriteLine("Kentucky");
+                    break;
+                case "MI": Console.WriteLine("Michigan");
+                    break;
+            }
+        }
     }
 }
