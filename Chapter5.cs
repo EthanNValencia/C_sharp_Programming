@@ -178,6 +178,13 @@ namespace C_sharp_Programming
                     break;
                 case "MI": Console.WriteLine("Michigan");
                     break;
+                case "TX":
+                case "tx":
+                case "Tx":
+                case "xT": Console.WriteLine("Texas");
+                    break;
+                default: Console.WriteLine("No match.");
+                    break;
             }
         }
     }

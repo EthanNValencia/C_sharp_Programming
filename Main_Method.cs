@@ -53,6 +53,9 @@ namespace C_sharp_Programming
             ch5.largestValue(10, 10);
             ch5.switchStatement("MI");
             ch5.switchStatement("FL");
+            ch5.switchStatement("JUHKH");
+            ch5.switchStatement("tx");
+
 
         }
     }
