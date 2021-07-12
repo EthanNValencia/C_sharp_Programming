@@ -162,7 +162,7 @@ namespace C_sharp_Programming
          * that is different or new. 
          */
 
-        public void switchStatement(String stateIni) // Example 5-19 pg 238
+        public void switchStateUSA(String stateIni) // Example 5-19 pg 238
         {
             switch (stateIni)
             {
@@ -184,6 +184,27 @@ namespace C_sharp_Programming
                 case "xT": Console.WriteLine("Texas");
                     break;
                 default: Console.WriteLine("No match.");
+                    break;
+            }
+        }
+        public void switchGrades(int grade)
+        {
+            switch(grade / 10)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7: Console.WriteLine("Failing grade.");
+                    break;
+                case 8: Console.WriteLine("Passing grade.");
+                    break;
+                case 9:
+                case 10: Console.WriteLine("Good grade.");
+                    break;
+                default: Console.WriteLine("Problem grade.");
                     break;
             }
         }

@@ -51,11 +51,12 @@ namespace C_sharp_Programming
             // bonusCalculator.checkBonus();
             ch5.largestValue(5, 10);
             ch5.largestValue(10, 10);
-            ch5.switchStatement("MI");
-            ch5.switchStatement("FL");
-            ch5.switchStatement("JUHKH");
-            ch5.switchStatement("tx");
-
+            ch5.switchStateUSA("MI");
+            ch5.switchStateUSA("FL");
+            ch5.switchStateUSA("JUHKH");
+            ch5.switchStateUSA("tx");
+            ch5.switchGrades(30);
+            ch5.switchGrades(100);
 
         }
     }
