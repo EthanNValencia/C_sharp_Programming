@@ -92,5 +92,74 @@ namespace C_sharp_Programming
             }
             Console.WriteLine("\n");
         }
+
+        public int Fac(int n) // Example 6-16, pg 300
+        /* 
+         * Visually, recursive functions look kind of like a V, they go from the top, to the bottom, then back up to the top. 
+         * This is a recursive example that determines the factorial of a given int. 
+         * While recursive functions are shorter to write, they take up lots of unnecessary resources. 
+         * Like Java, recursion is largely a relic, that should be utilized if the depth of the call stack
+         * is fairly short. 
+         */
+        {
+            if (n == 1)
+                return 1;
+            else
+                return (n * Fac(n - 1));
+            /*
+             * How does this method work? 
+             * 
+             * Fac(4) -> Fac(3) -> Fac(2) -> Fac(1) -> 
+             * The bottom is reached 
+             * Fac(1) returns 1 ->
+             * Fac(2) returns n * Fact(1) or 2 * 1 -> 
+             * Fac(3) returns n * Fact(2) or 3 * 2 -> 
+             * Fac(4) returns n * Fact(3) or 4 * 6 -> 
+             * The top is reached
+             * Final result is 24
+             */
+        }
+
+        public void BreakExample() // Example 6-17, pg 303
+        {
+            int total = 0;
+            for (int nValue = 0; nValue < 10; nValue++)
+            {
+                if (nValue == 5)
+                {
+                    break;
+                }
+                total += nValue; // What happens here?
+                /* 
+                 * 0 += 0 = 0
+                 * 0 += 1 = 1
+                 * 1 += 2 = 3
+                 * 3 += 3 = 6
+                 * 6 += 4 = 10
+                 * ~ break ~
+                 * total is 10
+                 */
+                Console.Write(nValue + " ");
+            }
+            Console.WriteLine("\nTotal is equal to {0}\n", total);
+        }
+
+        public void ContinueExample()
+        {
+            int total = 0;
+            for (int nValue = 0; nValue < 10; nValue++)
+            {
+                if (nValue % 2 == 0)
+                {
+                    continue; // If nValue is even, then the control flow will be returned to the loop heading. 
+                }
+                total += nValue;             // If nValue % 2 == 0, this will not be reached. 
+                Console.Write(nValue + " "); // If nValue % 2 == 0, this will not be reached.
+            }
+            Console.WriteLine("\nTotal is equal to {0}\n", total); // The final total is 25
+            /*
+             * 1 + 3 + 5 + 7 + 9 = 25
+             */
+        }
     }
 }
