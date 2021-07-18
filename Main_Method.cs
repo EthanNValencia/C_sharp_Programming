@@ -63,7 +63,7 @@ namespace C_sharp_Programming
             ch5.multipleChoiceExercises();
             */
             Chapter6 ch6 = new Chapter6();
-            ch6.testWindow();
+            ch6.WhileLoopExample610();
         }
     }
 

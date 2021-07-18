@@ -14,7 +14,7 @@ namespace C_sharp_Programming
 {
     class Chapter5_BonusCalculator
     {
-        public void checkBonus()
+        public void CheckBonus()
         {
             decimal bonus = 0m;
             Console.Write("What was your gross sales? ");

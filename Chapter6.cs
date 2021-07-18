@@ -7,20 +7,14 @@ namespace C_sharp_Programming
 {
     class Chapter6
     {
-        public void testWindow() // Chapter 6, example 6-5, pg 274-275
+            public void WhileLoopExample610() // Chapter 6, example 6-10, pg 286
         {
             int counter = 0;
-            string result = "";
-            while(counter < 10)
+            while(counter < 11)
             {
+                Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}", counter, Math.Pow(counter, 2), Math.Pow(counter, 3), Math.Pow(counter, 4), Math.Pow(counter, 5));
                 counter++;
-                result += "\t"
-                       + counter
-                       + "\t"
-                       + Math.Pow(counter, 2)
-                       + "\n";
             }
-            System.Windows.Forms.MessageBox.Show(result, "1 through 10 and their squares."); // This doesn't work and the textbook is out dated. 
         }
 
     }
