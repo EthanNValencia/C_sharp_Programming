@@ -3,6 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 
+/*
+ * CHAPTER 6
+ * 
+ * Learn about loops in C#.
+ * Learn about counter, state, and sentinel controlled loops. 
+ * Recursion.
+ * Introduced to foreach looping structures.
+ * Learn about continue and break in loops.
+ * Loops should have one entry point and one exit point. This convention makes the loop testable and debuggable. 
+ * 
+ */
+
 namespace C_sharp_Programming
 {
     class Chapter6
