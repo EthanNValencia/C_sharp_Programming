@@ -11,3 +11,9 @@ C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp
 C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.pdb
 C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.genruntimeconfig.cache
 C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.csproj.AssemblyReference.cache
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\System.Windows.Forms.dll
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\Accessibility.dll
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\System.Deployment.dll
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\bin\Debug\netcoreapp3.1\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.csproj.CopyComplete
+C:\Users\Ethan\source\VisualStudioRepos\C_sharp_Programming\obj\Debug\netcoreapp3.1\C_sharp_Programming.csproj.ResolveComReference.cache

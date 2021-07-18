@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace C_sharp_Programming
 {
@@ -44,6 +45,7 @@ namespace C_sharp_Programming
             */
 
             Chapter5 ch5 = new Chapter5();
+            /*
             ch5.gradePointAverage();
             ch5.example56(90);
 
@@ -57,7 +59,11 @@ namespace C_sharp_Programming
             ch5.switchStateUSA("tx");
             ch5.switchGrades(30);
             ch5.switchGrades(100);
-
+            ch5.ternaryOperator();
+            ch5.multipleChoiceExercises();
+            */
+            Chapter6 ch6 = new Chapter6();
+            ch6.testWindow();
         }
     }
 

@@ -187,6 +187,13 @@ namespace C_sharp_Programming
                     break;
             }
         }
+        /*
+         * The individual case must be a constant literal, not a variable. 
+         * int five = 5;
+         * (...)
+         * case five: <--- syntax error, variable.
+         * case 5: <-- good, constant literal.
+         */
         public void switchGrades(int grade)
         {
             switch(grade / 10)
@@ -207,6 +214,43 @@ namespace C_sharp_Programming
                 default: Console.WriteLine("Problem grade.");
                     break;
             }
+        }
+
+        public void ternaryOperator()
+        {
+            int examScore = 90;
+            char grade = examScore > 89 ? 'A' : 'B';
+            Console.WriteLine("examScore(90) > 89 ? 'A' : 'B'; results in " + grade);
+
+            // Example 5-21 pg 241
+            double charges, timeAtSite = 3.5;
+            charges = timeAtSite < 2.0 ? 100.00 : timeAtSite * 50.00;
+            Console.WriteLine("timeAtSite(3.5) < 2.0 ? 100.00 : timeAtSite * 50.00; evaluates to: " + charges);
+        }
+
+        public void multipleChoiceExercises()
+        {
+            // Question 13 pg 259
+            int x = 9, y = 3;
+            if (x >= y) if (y > 0) x = x * y; else if (y < 4) x = x - y;
+            Console.WriteLine("Question 13: X is " + x);
+            
+            // Question 14 pg 259
+            int inputValue = 0;
+            if (inputValue > 5)
+                inputValue += 5;
+            else if (inputValue > 2)
+                inputValue += 10;
+            else inputValue += 15;
+            Console.WriteLine("Question 14: inputValue is " + inputValue);
+
+            // Question 17 pg 260
+            int aValue = 100, bValue = 7, result;
+            result = aValue > bValue + 100 ? 1000 : 2000;
+            Console.WriteLine("Question 17: result is " + result);
+
+            Console.WriteLine(8 <= 4);
+            Console.WriteLine(6 != 6);
         }
     }
 }
