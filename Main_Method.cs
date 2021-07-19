@@ -63,12 +63,13 @@ namespace C_sharp_Programming
             ch5.multipleChoiceExercises();
             */
             Chapter6 ch6 = new Chapter6();
+            /*
             ch6.WhileLoopExample610();
             ch6.ForLoopExamples();
             ch6.ForEachExample612();
             ch6.DoWhileLoop();
             ch6.NestedLoopExample();
-
+            */
             Chapter6_Factorial ch6_fact = new Chapter6_Factorial(); // This is a cool factorial example.
             // ch6_fact.runFactorial();
 
@@ -79,7 +80,10 @@ namespace C_sharp_Programming
             // ch6.MultipleChoiceQuestions();
             // ch6.Question20();
             // ch6.Question21();
-            ch6.Question22();
+            // ch6.Question22();
+
+            Chapter7 ch7 = new Chapter7();
+            ch7.ArrayBasics();
         }
     }
 
