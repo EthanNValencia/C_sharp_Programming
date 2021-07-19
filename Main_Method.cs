@@ -72,10 +72,14 @@ namespace C_sharp_Programming
             Chapter6_Factorial ch6_fact = new Chapter6_Factorial(); // This is a cool factorial example.
             // ch6_fact.runFactorial();
 
-            Console.WriteLine(ch6.Fac(4)); // 4x3x2x1 = 24
+            // Console.WriteLine(ch6.Fac(4)); // 4x3x2x1 = 24
             // ch6.RecursiveExample(24);
-            ch6.BreakExample();
-            ch6.ContinueExample();
+            // ch6.BreakExample();
+            // ch6.ContinueExample();
+            // ch6.MultipleChoiceQuestions();
+            // ch6.Question20();
+            // ch6.Question21();
+            ch6.Question22();
         }
     }
 

@@ -13,6 +13,12 @@ using System.Windows;
  * Learn about continue and break in loops.
  * Loops should have one entry point and one exit point. This convention makes the loop testable and debuggable. 
  * 
+ * Pretest loop vs Posttest loop
+ * A pretest loop checks the test conditions prior to running: for and while are pretest loops.
+ * A posttest loop checks the test conditions after running: do...while is a posttest loop.
+ * 
+ * If you intend to place a block of statements within a loop body, you must use curly braces around the block.
+ * 
  */
 
 namespace C_sharp_Programming
@@ -173,5 +179,99 @@ namespace C_sharp_Programming
              * 1 + 3 + 5 + 7 + 9 = 25
              */
         }
+
+        public void MultipleChoiceQuestions() // pg 319 - 325
+        {
+            int counter = 0;
+            int num = 10;
+            while (num > 0)
+            {
+                num--;
+                counter++;
+            }
+            Console.Write(counter + " ");
+
+            counter = 0;
+            for (num = 0; num < 10; num++)
+                counter++;
+            Console.Write(counter + "\n");
+
+            num = 1;
+            do
+            {
+                num++;
+                Console.WriteLine(num++);
+            } while (num < 3);
+
+            int aValue = 0, n = 10;
+            for (int i = n; i > 0; i--) // i is 10, the for loop runs prior to decrementing, therefor 10 is pushed through first. 
+                if (i % 2 == 0) // if i is even
+                    aValue = aValue + i; // add i to the sum
+            Console.WriteLine("\n" + aValue + "\n"); // 10+8+6+4+2 = 30
+
+
+            // produce: 2 4 6 8 10
+            n = 0; // Question 10, pg 321
+            do
+            {
+                n = n + 2;
+                Console.Write("{0} ", n);
+            } while (n < 10); // When n is 10, this stops. 
+
+            Console.WriteLine("\n");
+
+            int test = 0; // Question 12, pg 322, what would the output be?
+            while (test < 0) // The test condition fails. 
+            {
+                Console.Write("{0} ", test); // Never executed. 
+                test++; // Never executed. 
+            }
+            Console.Write("{0}", test); // 0 is printed. 
+        }
+
+        public void Question20()
+        {
+            int i = 0;
+            while (i < 10);
+            i++;
+            Console.Write(i);
+        }
+
+        /*
+         * Produce a for and while loop that do what the first do...while loop does. 
+         */
+        public void Question21()
+        {
+            int counter = 100;
+            do { // make this loop as a for and while
+                Console.Write(counter + " ");
+                counter--;
+            } while (counter > 0);
+
+            Console.WriteLine("\n");
+
+            for (int i = 100; i > 0; i--) // for 
+                Console.Write(i + " ");
+
+            Console.WriteLine("\n");
+            
+            counter = 100;
+            while (counter > 0) // while
+            {
+                Console.Write(counter + " ");
+                counter--;
+            }
+        }
+
+        /*
+         * Write a for loop to display every third number beginning with 10 through 100.
+         */
+        public void Question22()
+        {
+            for (int i = 10; i <= 100; i += 3)
+                Console.Write(i + " ");
+        }
+
+
     }
 }
