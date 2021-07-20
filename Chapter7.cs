@@ -19,6 +19,10 @@ using System.Text;
  * 
  * In C#, all arrays are objects of the base type. 
  * Like Java, the length of an array cannot be changed. 
+ * 
+ * The array idfentifer memory location does not actually contain the values of the array, 
+ * but rather an address indicating the location of the elements in the array. 
+ * 
  */
 namespace C_sharp_Programming
 {
