@@ -23,6 +23,8 @@ using System.Text;
  * The array idfentifer memory location does not actually contain the values of the array, 
  * but rather an address indicating the location of the elements in the array. 
  * 
+ * Array objects and string types contain a reference to the location of the stored values. 
+ * 
  */
 namespace C_sharp_Programming
 {
@@ -129,6 +131,29 @@ namespace C_sharp_Programming
             Array.Sort(waterDepth);
             foreach (double wVal in waterDepth)
                 Console.Write(wVal + " "); // Displays 3.5 6.8 12.4
+        }
+
+        public void VaryingArguments() // Example 7-14, pg 353
+        {
+            DisplayItems(1, 2, 3, 5); // 1 2 3 4
+            int[] anArray = new int[5] { 100, 200, 300, 400, 500 };
+            DisplayItems(anArray); // 100 200 300 400 500 
+            DisplayItems(1500, anArray[1] * anArray[2]); // 1500 60000
+            DisplayItems(1); // 1
+        }
+        /*
+         * This is an example of how the params array can be used. This means that the number of arguments 
+         * that are passed to the method may vary. This is cool, because instead of specifying a single
+         * int, the method can take a single argument, but it can also take several in the form of 
+         * an array. 
+         */
+        public void DisplayItems(params int[] item) // This is really cool. I learned how to do this in Java too!
+        {
+            for (int i = 0; i < item.Length; i++)
+            {
+                Console.Write(item[i] + " ");
+            }
+            Console.WriteLine("\n");
         }
     }
 }

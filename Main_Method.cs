@@ -84,6 +84,7 @@ namespace C_sharp_Programming
 
             Chapter7 ch7 = new Chapter7();
             ch7.ArrayBasics();
+            ch7.VaryingArguments();
             // Console.WriteLine(args.Length);
         }
     }
