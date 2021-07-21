@@ -83,9 +83,23 @@ namespace C_sharp_Programming
             // ch6.Question22();
 
             Chapter7 ch7 = new Chapter7();
+            /*
             ch7.ArrayBasics();
             ch7.VaryingArguments();
-            // Console.WriteLine(args.Length);
+            Console.WriteLine(args.Length);
+            ch7.TwoDimensionalSquareArray();
+            ch7.JaggedArrayExample();
+            ch7.ThreeDimensionalSquareArray();
+            */
+            ch7.ThreeDimensionalSquareArray();
+            Console.WriteLine();
+            ch7.Question7();
+            ch7.Question12();
+            ch7.Question15();
+            ch7.Question16();
+            ch7.Question26();
+            ch7.Question27();
+            // Chapter7_CalorieCounter.run();
         }
     }
 
