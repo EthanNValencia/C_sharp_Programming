@@ -99,6 +99,8 @@ namespace C_sharp_Programming
             ch7.Question16();
             ch7.Question26();
             ch7.Question27();
+            ch7.Exercise10();
+            ch7.Question28();
             // Chapter7_CalorieCounter.run();
         }
     }

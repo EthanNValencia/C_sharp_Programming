@@ -281,6 +281,7 @@ namespace C_sharp_Programming
 
         public void Question7() // pg 393
         {
+            Console.WriteLine("\nQuestion 7");
             char[,] n = { { 'a', 'b', 'c', 'd', 'e' }, { 'f', 'g', 'h', 'i', 'j' } };
             Console.WriteLine(n[1, 1]); // g
             Console.WriteLine(n[0, 4]); // e
@@ -288,6 +289,7 @@ namespace C_sharp_Programming
         }
         public void Question12() // pg 394
         {
+            Console.WriteLine("\nQuestion 12");
             int i;
             int[] anArray = new int[5];
             for (i = 0; i < anArray.Length; i++)
@@ -298,17 +300,20 @@ namespace C_sharp_Programming
         }
         public void Question15() // pg 395
         {
+            Console.WriteLine("\nQuestion 15");
             int[,] points = { { 300, 100, 200, 400, 600 }, { 550, 700, 900, 200, 100 } };
             points[0, 4] = points[0, 4 - 2];
             Console.WriteLine(points[0, 4]); // 200
         }
         public void Question16() // pg 395
         {
+            Console.WriteLine("\nQuestion 16");
             int[,] points = { { 300, 100, 200, 400, 600 }, { 550, 700, 900, 200, 100 } };
             Console.WriteLine(points[1,2] + points[0,3]); // 1300
         }
         public void Question26() // pg 397
         {
+            Console.WriteLine("\nQuestion 26");
             string sValue = "Today is the first day of your life.";
             // a. Create a new string that has all lowercase characters the word Day. Day should be all uppercase. 
             string aString = (sValue.ToLower()).Replace(" day", " DAY");
@@ -331,7 +336,8 @@ namespace C_sharp_Programming
             Console.WriteLine(sValue.Replace("first", "best"));
         }
         public void Question27() // Predict what the results will be by reading the code. pg 397
-        { 
+        {
+            Console.WriteLine("\nQuestion 27");
             int[] anArray = { 34, 55, 67, 89, 99 };
             // a
             Console.WriteLine(anArray.Length); // 5
@@ -343,6 +349,46 @@ namespace C_sharp_Programming
             Console.WriteLine(anArray[2 + 1] * anArray[0]); // 89 * 34 = 3026
             // e
             Console.WriteLine(anArray.Rank); // 1
+        }
+        public void Question28() // Pg 398
+        {
+            Console.WriteLine("\nQuestion 28");
+            int[] bArray = new int[10];
+            int[,] cArray = new int[2, 3];
+            string[,,] dArray = new string[5, 2, 6];
+            // a. Write a foreach loop to display the contents of bArray.
+            foreach (int val in bArray)
+                Console.Write(val + " ");
+            // b. Write a for loop to increment each element in bArray by 5.
+            Console.WriteLine();
+            for (int i = 0; i < bArray.Length; i++)
+                bArray[i] += 5;
+            foreach (int val in bArray)
+                Console.Write(val + " ");
+            // c. Write a foreach loop to display the contents of cArray.
+            Console.WriteLine();
+            foreach (int val in cArray)
+                Console.Write(val + " ");
+            // d. Use a foreach loop to initialize all elements of cArray with zero. 
+            Console.WriteLine();
+            // I could write this using if statements with counter variables, but it is kind of a waste of time. 
+            // e. Write a foreach loop to display the contents of dArray.
+            Console.WriteLine();
+            foreach (string val in dArray)
+                Console.Write(val + " ");
+            Console.WriteLine("\nEnd of Question 28.");
+        }
+       
+        public void Exercise10() // Pg 399
+        {
+            Console.WriteLine("\nExercise 10");
+            int[,] enrollment = { { 18, 11, 09, 04, 20 }, { 20, 20, 25, 20, 20 } };
+            string[] className = { "CS150", "CS250", "CS270", "CS300", "CS350" };
+            Console.WriteLine("CN\tCE\tME");
+            for(int i = 0; i < enrollment.GetLength(1); i++)
+            {
+                Console.WriteLine("{0}\t{1}\t{2}", className[i], enrollment[0, i], enrollment[1, i]);
+            }
         }
     }
 }
