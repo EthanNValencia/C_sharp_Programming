@@ -17,6 +17,22 @@ using System.Text;
  * In the English language, a delegate is a person who would as a sort of bridge between two 
  * entities. In C#, a delegate is often used a bridge between events and objects. 
  * 
+ * For example, in the chapter 8 project, I used a button to call a method. When the button is 
+ * clicked there are two things that happen. 
+ * 1. The click event was registered as being of interest
+ * 2. The event-hanlder method heading was generated. 
+ * This is called "event wiring". This means that a event is associated with an event. 
+ * 
+ * Syntax: Event handler methods tend to all have a similar signature:
+ * private void event_name(object sender, System.EventArgs e){
+ *  -- Whatever the event is supposed to do goes here. 
+ * }
+ * 
+ * Syntax: Events can easily associated with controls, for example:
+ * this.button1.Click += new System.EventHandler(this.event_name);
+ * This associates the button1 with the event_name method. It also states the action that 
+ * will be recognized as being the cause, which is a Click. 
+ * 
  */
 namespace C_sharp_Programming
 {
@@ -37,7 +53,7 @@ namespace C_sharp_Programming
          */
         static string EndStatement() // Example 9-2, pg 481
         {
-            return "in 10 years.";
+            return "in 10 years."; // This is used in Chapter9_DelegateExample
         }
         /*
          * Comparing Example 9-1 with Example 9-2, they have many similarities. They both have zero parameters and they
