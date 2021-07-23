@@ -90,7 +90,7 @@ namespace C_sharp_Programming
             ch7.TwoDimensionalSquareArray();
             ch7.JaggedArrayExample();
             ch7.ThreeDimensionalSquareArray();
-            */
+            
             ch7.ThreeDimensionalSquareArray();
             Console.WriteLine();
             ch7.Question7();
@@ -101,7 +101,10 @@ namespace C_sharp_Programming
             ch7.Question27();
             ch7.Exercise10();
             ch7.Question28();
+            */
             // Chapter7_CalorieCounter.run();
+
+            Chapter9_DelegateExample.RunDelegateExample();
         }
     }
 
