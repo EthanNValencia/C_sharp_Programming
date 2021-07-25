@@ -34,6 +34,28 @@ using System.Text;
  * will be recognized as being the cause, which is a Click. 
  * 
  */
+
+/*
+ * Delegates are special types of .NET classes whose instances store references (addresses) to methods. 
+ * 
+ * A declaration for a delegate looks more like a method declaration than a class definition. Every delegate
+ * type has a signature, which may include zero or more parameters. The signature indicates what method 
+ * signatures must look like if they are to be rerferenced by the delegate. 
+ * 
+ * Multicast delegates are wired to multiple methods, all of which are executed, one after the other, when 
+ * an event is raised. 
+ * 
+ * Events can be considered special forms of delegates in C# because they enable you to place a reference to
+ * an event-handler methods inside a delegate. After this reference is made, or the event is registered, the 
+ * delegate is used to call the event-handler methods. 
+ * 
+ * To respond to events in your program, two things must occur. 
+ * 1. You must register the event as being of interest. 
+ * 2. An event-handler mehtod must be generated. 
+ * This is called event wiring, wiring together the events with their components. 
+ * 
+ * All event-handler methods normally have the same signature. They do not return anything; they have a return type of void, and two parameters. 
+ */
 namespace C_sharp_Programming
 {
     class Chapter9
