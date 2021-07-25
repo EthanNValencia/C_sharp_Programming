@@ -104,7 +104,11 @@ namespace C_sharp_Programming
             */
             // Chapter7_CalorieCounter.run();
 
-            Chapter9_DelegateExample.RunDelegateExample();
+            // Chapter9_DelegateExample.RunDelegateExample();
+
+            Chapter10_Student aStudent = new Chapter10_Student("12345", "Tim", "Moore", "CS", 111);
+            // For aStudent, "CS", 111 is used in the Student class, but everything else is used in the Person class. 
+            Console.WriteLine(aStudent.ToString()); // This prints the overridden ToString in the Chapter10_Person 
         }
     }
 
