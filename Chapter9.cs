@@ -54,7 +54,8 @@ using System.Text;
  * 2. An event-handler mehtod must be generated. 
  * This is called event wiring, wiring together the events with their components. 
  * 
- * All event-handler methods normally have the same signature. They do not return anything; they have a return type of void, and two parameters. 
+ * All event-handler methods normally have the same signature. They do not return anything; they have a return 
+ * type of void, and two parameters. 
  */
 namespace C_sharp_Programming
 {

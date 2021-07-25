@@ -15,6 +15,17 @@ using System.Text;
  */
 namespace C_sharp_Programming
 {
+    /*
+     *                      ---- OOP Features ----
+     * 1. Abstraction     - The language must provide a way to manage complex problems by allowing you to abstract
+     *                      or identify the objects involved in the problem. 
+     * 2. Encapsulation   - The language must provide support for packaging data attributes and behaviors into a
+     *                      single unit, thus hiding implementation details. 
+     * 3. Inheritance     - The language must provide features that enable reuse of code through extending the 
+     *                      functionality of the program units. 
+     * 4. Polymorphism    - The language must enable multiple implementations of the same behaviors so that the
+     *                      appropriate implementation can be executed based on the situation. 
+     */
     class Chapter10
     {
     }
