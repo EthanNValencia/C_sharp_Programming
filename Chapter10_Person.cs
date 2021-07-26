@@ -4,7 +4,6 @@ using System.Text;
 /*
  * This is the base or parent class of the Chapter10_Student class. 
  * Refer to Chapter10_Student for an example of inheritance. 
- * 
  */
 namespace C_sharp_Programming
 {
