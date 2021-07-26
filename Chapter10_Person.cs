@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+/*
+ * This is the base or parent class of the Chapter10_Student class. 
+ * Refer to Chapter10_Student for an example of inheritance. 
+ * 
+ */
 namespace C_sharp_Programming
 {
     class Chapter10_Person // Example 10-1, pg 582
@@ -91,7 +95,7 @@ namespace C_sharp_Programming
              */
             return firstName + " " + lastName;
         }
-        public virtual int getSleepAmt() // Virtual means that the method can be overridden in the child class. 
+        public virtual int GetSleepAmt() // Virtual means that the method can be overridden in the child class. 
         {
             return 8;
         }

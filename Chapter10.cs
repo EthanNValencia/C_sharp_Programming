@@ -65,6 +65,25 @@ namespace C_sharp_Programming
      * files can be stored. They can be referenced from a number of different applications. 
      */
 
+    /*
+     * --- Making A Stand-Alone Component ---
+     * One of the cool things about DLL is that a class can be compiled and stored as a DLL. DLLs can be
+     * accessed by other programs. 
+     * 
+     * I created two DLL through the visual studio command prompt. 
+     * 
+     * Tools > Command Line > Developer Command Prompt
+     * 
+     * The first I created I typed:
+     * csc /target:library /out:Chapter10_Person.dll Chapter10_Person.cs
+     * 
+     * The second I created I typed: 
+     * csc /target:library /out:Chapter10_Student.dll Chapter10_Student.cs Chapter10_Person.cs
+     * 
+     * The second DLL requires Chapter10_Person.cs, because it is a child of that class. It is necessary to
+     * include it. 
+     */
+
     class Chapter10
     {
     }

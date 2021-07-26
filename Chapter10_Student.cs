@@ -49,9 +49,17 @@ namespace C_sharp_Programming
             major = maj;
             studentId = sId;
         }
-        public override int getSleepAmt()
+        public override int GetSleepAmt()
         {
             return 6;
+        }
+        public int CallOverriddenGetSleepAmt() 
+        {
+            /*
+             * If you wish to override a base method, but still want to have access to it, 
+             * then this is a good way of doing it. Create a method that calls the base method. 
+             */
+            return base.GetSleepAmt();
         }
     }
 }
