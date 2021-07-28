@@ -84,7 +84,127 @@ namespace C_sharp_Programming
      * include it. 
      */
 
+    /*                  -- DLL --
+     * After a DLL is created, it is not easy to view its contents. In order to view it ILDASM must be 
+     * used. It must be added as a tool.
+     * Tools > External Tools > Add > add the exe to the command, "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\ildasm.exe"
+     * Now IL DASM can be run from the Tools. Open the DLL and limited information about the contents of the DLL
+     * can be viewed. Page 606 for more information.
+     * 
+     * Additional DLL info can be found in Chapter10_PresentationGUI and in Chapter10_PersonStudent.
+     */
+
+
     class Chapter10
     {
+    }
+
+    /*                  -- Abstract Classes --
+     * Pg 607 - 608
+     * Abstract classes serve the same purpose in C# as they do in Java. 
+     * They are instantiate, but rather they are implemented upon classes in order to 
+     * give certain classes similarities. 
+     * 
+     * The syntax for creating an abstract class:
+     * [access modifier] abstract class [class name] { }
+     * 
+     * Abstract class exmaple:
+     * public abstract class Person { ... }
+     * 
+     * After a class is declared to be abstract it cannot be directly instantiated. 
+     */
+    public abstract class Person
+    {
+        /*
+         * Every class that implements the Person abstract class will not have to
+         * implement the GerExerciseHabits(). The compiler understands that abstract
+         * classes will be overridden, so include the "virtual" keyword is not 
+         * necessary. 
+         */
+        public abstract string GetExerciseHabits(); 
+        public int ConvertNumber(int inputNum) // This method has a body. 
+        {
+            int number = 5;
+            number *= inputNum;
+            return number;
+        }
+    }
+
+    /* Pg 609
+     *                  -- Partial Classes --
+     * Partial classes are used to split up class definitions across different files. 
+     * When I created a GUI, the Form1 class is split into two partial classes. 
+     * 
+     * IMO: Partial classes seem like a feature that is good for when engaging in 
+     * project development (with multiple programmers), but after the fact, it could 
+     * make maintaining code a little more tedious. 
+     * 
+     * At compile time, the partials are merged into a unified class definition. 
+     */
+    public partial class ExamplePartialClass // This could be in one file.
+    {
+        int number = 0;
+    }
+    public partial class ExamplePartialClass // This could be in another file.
+    {
+        string name = "Name";
+    }
+    /*
+     * The two partial classes are understood to be the same class. In practice,
+     * it probably wouldn't be a good idea to place the same partials in the same
+     * file, but for the sake of showing an example I am doing it here. 
+     */
+
+    /* pg 610
+     *                   -- Interfaces --
+     * A interface is similar to an abstract class, but there is no limit to how
+     * many interfaces a class can implement. This is different, because a class
+     * can only extend one abstract class. An abstract class can be used to
+     * both implement and define functionality, but an interface only allows the 
+     * ability to define functionality. 
+     * 
+     * The book recommends that interfaces should be defined as their own Class 
+     * Library project. They can be converted into their own DLL. The reason why 
+     * this is useful is because I can reap the benefits of component based development. 
+     */
+    public interface ExampleInterface
+    {
+        // Cannot contain instance fields. 
+        string FindName();
+        string GetDestination();
+        double DetermineMiles();
+    }
+    public abstract class ExampleAbstractClass
+    {
+        public abstract string GetExerciseHabits();
+        public int ConvertNumber(int inputNum) // This method has a body. 
+        {
+            int number = 5;
+            number *= inputNum;
+            return number;
+        }
+    }
+
+    public class ExampleClass : ExampleAbstractClass, ExampleInterface // This class extends ExampleAbstractClass and implements the ExampleInterface. 
+    {
+        public override string GetExerciseHabits()
+        {
+            return "Jogging, Hiking";
+        }
+        public double DetermineMiles()
+        {
+            double num = 5;
+            return num;
+        }
+
+        public string FindName()
+        {
+            return "Matt";
+        }
+
+        public string GetDestination()
+        {
+            return "Mali, Africa";
+        }
     }
 }
