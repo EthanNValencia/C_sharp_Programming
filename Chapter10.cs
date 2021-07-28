@@ -184,7 +184,6 @@ namespace C_sharp_Programming
             return number;
         }
     }
-
     public class ExampleClass : ExampleAbstractClass, ExampleInterface // This class extends ExampleAbstractClass and implements the ExampleInterface. 
     {
         public override string GetExerciseHabits()
@@ -194,6 +193,7 @@ namespace C_sharp_Programming
         public double DetermineMiles()
         {
             double num = 5;
+            this.ConvertNumber(4); // This class knows about the methods in the interface. 
             return num;
         }
 
@@ -206,5 +206,36 @@ namespace C_sharp_Programming
         {
             return "Mali, Africa";
         }
+    }
+    /* Example 10-22, pg 615
+     * 
+     * These are some of the collection class headings with their interfaces. 
+     * 
+     * public abstract class Array : ICloneable, IList, ICollection, IEnumerable
+     * 
+     * public class ArrayList : IList, ICollection, IEnumerable, ICloneable
+     * public class Queue : ICollection, Inumerable, ICloneable
+     * public class Stack : ICollection, Inumerable, ICloneable
+     * public class HastTable : IDictionary, ICollection, Inumerable, ISerializable, 
+     *                          IDeserializationCallback, ICloneable
+     */
+
+    /*                      ---- POLYMORPHISM ---- pg 615 - 617
+     * It is the ability for classes to provide different implementations of methods that
+     * are called by the same name. For example, with the collections, the Add() does different
+     * things. Sure, it is used to add things to a collection, but the specifics of how that 
+     * is achieved is different. 
+     * 
+     * An example of polymorphism in the English language is how we use the word "drive". Drive
+     * can mean to "drive a car" or "drive a nail" or "drive a point" -- it changes depending
+     * on the context and what the object of the conversation is. 
+     * 
+     * ToString() is a great example of polymorphism. It does a similar thing, but it differs in
+     * its implementation depending on the object. 
+     */
+    
+    public class GenericExample<T> // Example 10-26, pg 620
+    {
+        public T dataMember;
     }
 }

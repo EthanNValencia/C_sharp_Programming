@@ -105,7 +105,7 @@ namespace C_sharp_Programming
             // Chapter7_CalorieCounter.run();
 
             // Chapter9_DelegateExample.RunDelegateExample();
-
+            /*
             Chapter10_Student aStudent = new Chapter10_Student("12345", "Tim", "Moore", "CS", 111);
             // For aStudent, "CS", 111 is used in the Student class, but everything else is used in the Person class. 
             Console.WriteLine(aStudent.ToString()); // This prints the overridden ToString in the Chapter10_Person 
@@ -114,6 +114,15 @@ namespace C_sharp_Programming
             bStudent.LastName = "Arnold"; // The child object is assigning data to its parent class. 
             bStudent.FirstName = "Scott";
             Console.WriteLine(bStudent.ToString());
+            */
+            ExampleClass exCl = new ExampleClass();
+            Console.WriteLine(exCl.ConvertNumber(4));
+
+            Chapter10_Stack.TestStackClass();
+            Console.WriteLine();
+            Chapter10_GenericStack<object>.TestGenericStackClass();
+            Console.WriteLine();
+            Chapter10_GenericExample.TestSwap();
         }
     }
 
