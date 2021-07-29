@@ -115,6 +115,7 @@ namespace C_sharp_Programming
             bStudent.FirstName = "Scott";
             Console.WriteLine(bStudent.ToString());
             */
+            /*
             ExampleClass exCl = new ExampleClass();
             Console.WriteLine(exCl.ConvertNumber(4));
 
@@ -123,6 +124,12 @@ namespace C_sharp_Programming
             Chapter10_GenericStack<object>.TestGenericStackClass();
             Console.WriteLine();
             Chapter10_GenericExample.TestSwap();
+            */
+
+            // Chapter11.ExceptionApp_Example11_2();
+            // Chapter11.ExceptionApp_Example11_4();
+            // Chapter11.ExceptionApp_Example11_5();
+            CustomExceptionExample.RunExample();
         }
     }
 
