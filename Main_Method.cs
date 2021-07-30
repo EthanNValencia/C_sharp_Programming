@@ -129,7 +129,10 @@ namespace C_sharp_Programming
             // Chapter11.ExceptionApp_Example11_2();
             // Chapter11.ExceptionApp_Example11_4();
             // Chapter11.ExceptionApp_Example11_5();
-            CustomExceptionExample.RunExample();
+            // CustomExceptionExample.RunExample();
+
+            Chapter12.Example_12_1();
+            Chapter12.EnumerationExample();
         }
     }
 
