@@ -40,6 +40,14 @@ using System.IO;
  * - Move()
  * All of the IO.File classes tend to do exactly what they say they do. 
  */
+
+/*
+ * Specifying pathname can be frustrating at times. In order to specify a path to the current
+ * level: "..\..\filename" 
+ * The "..\" means that the index is being pulled back a folder level. 
+ */
+
+
 namespace C_sharp_Programming
 {
     class Chapter12
@@ -133,5 +141,37 @@ namespace C_sharp_Programming
                 Console.WriteLine("{0} {1,12:N0}{2,20:g}", name.PadRight(50), size, creationTime);
             }
         }
+        /*
+         *              ---- StreamWriter & StreamReader ----
+         * 
+         * Useful StreamWriter members:
+         * - AutoFlush - gets or sets value indicating whether the STreamWRiter flushes its buffer. 
+         * - Close() 
+         * - Dispose() - Releases unmanaged resources used by the StreamWriter.
+         * - Flush() - Clears all buffers and causes any buffered data to be written to the underlying stream.
+         * - NewLine - gets or sets the terminatitor string.
+         * - Write()
+         * - WriteLine()
+         * 
+         * StreamWriter Overloaded Constructor Example:
+         * new StreamWriter("..\..\info.txt, true); 
+         * The true indicates that the txt file can be appended. 
+         * 
+         * Useful StreamReader members:
+         * - Close()
+         * - DiscloseBufferedData() - Allows the StreamReader to discard its current data.
+         * - Peek() - Returns the next available character, but does not consume it.
+         * - Read()
+         * - ReadBlock() - Reads a specific number of characters and writes data to buffer beginning at the index. 
+         * - ReadLine()
+         * - ReadToEnd() - Reads from current position to the end.
+         */
+        public static void ConstructStreamObjects()
+        {
+            StreamWriter outputFile = new StreamWriter("filename"); // writes to file
+            StreamReader inputFile = new StreamReader("filename"); // reads from file
+        }
+
+
     }
 }
