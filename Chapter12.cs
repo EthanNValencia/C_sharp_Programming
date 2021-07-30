@@ -52,7 +52,7 @@ namespace C_sharp_Programming
             {
                 Console.WriteLine("Filename: {0}", fileName);
                 Console.WriteLine("Filepath: {0}", path);
-                Console.WriteLine("Attributes: {0}", File.GetAttributes(fileName));
+                Console.WriteLine("Attributes: {0}", File.GetAttributes(fileName)); // Attributes are enumeration (example below)
                 Console.WriteLine("Created: {0}", File.GetCreationTime(fileName));
                 Console.WriteLine("Last Accessed: {0}", File.GetLastAccessTime(fileName));
             }
@@ -80,6 +80,58 @@ namespace C_sharp_Programming
             Console.WriteLine("Today is {0}.", WeekDay.Tuesday);
             Console.WriteLine("{0} = {1}.", WeekDay.Sunday, (int)WeekDay.Sunday);
             Console.WriteLine("{0} = {1}.", WeekDay.Tuesday, (int)WeekDay.Tuesday);
+        }
+        /*
+         * Directory Class - useful methods include: // pg 712-713
+         * 
+         * - CreateDirectory()
+         * - Delete()
+         * - Exists()
+         * - GetCreationTime()
+         * - GetCurrentDirectory()
+         * - GetDirectories()
+         * - GetFiles()
+         * - GetParent()
+         * - GetLastWriteTime()
+         * - Move()
+         * - SetCurrentDirectory()
+         */
+
+        /*
+         * Useful distinction
+         * DirectoryInfo and FileInfo are classes that can be instantiated.
+         * File and Directory are static classes that cannot be instantiated. 
+         */
+
+        /*
+         * FileInfo Class Properties: // pg 713-714
+         * - Attributes
+         * - Directory
+         * - DirectoryName
+         * - Exists
+         * - Extension
+         * - FullName
+         * - LastAccessTime
+         * - LastWriteTime
+         * - Length
+         * - Name
+         */
+        public static void Example_12_2() // Example 12-2, pg 714
+        {
+            /*
+             * This method goes through all the files that are in the directory
+             * and prints out some basic information about them to the console. 
+             */
+            DirectoryInfo dir = new DirectoryInfo(".");
+            Console.WriteLine("Current Directory: \n{0}\n", Directory.GetCurrentDirectory());
+            Console.WriteLine("FileName".PadRight(59) + "Size".PadRight(11) + "Creation Time");
+            foreach (FileInfo fil in dir.GetFiles("*.*"))
+            {
+                string name = fil.Name;
+                long size = fil.Length;
+                DateTime creationTime = fil.CreationTime;
+                Console.WriteLine("{0} {1,12:N0}{2,20:g}", name.PadRight(50), size, creationTime);
+            }
         }
     }
 }

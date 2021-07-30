@@ -133,6 +133,7 @@ namespace C_sharp_Programming
 
             Chapter12.Example_12_1();
             Chapter12.EnumerationExample();
+            Chapter12.Example_12_2();
         }
     }
 
