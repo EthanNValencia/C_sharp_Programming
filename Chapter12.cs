@@ -168,6 +168,7 @@ namespace C_sharp_Programming
          */
         public static void ConstructStreamObjects()
         {
+            // openFileDialog1.ShowDialog();
             StreamWriter outputFile = new StreamWriter("filename"); // writes to file
             StreamReader inputFile = new StreamReader("filename"); // reads from file
         }
@@ -176,6 +177,12 @@ namespace C_sharp_Programming
          * is usable for the next application. 
          */
 
-
+        /* 
+         * After learning about BinaryReader and BinaryWriter pg 736
+         * Additional Streams 
+         * 1. NetworkStream can be used while working with network connections. (synchronous and asynchronous data transfer)
+         * 2. MemoryStream works directly with data in memory. (sounds interesting)
+         * 3. FileStream supports randomly accessing data in a file. 
+         */
     }
 }

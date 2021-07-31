@@ -130,10 +130,13 @@ namespace C_sharp_Programming
             // Chapter11.ExceptionApp_Example11_4();
             // Chapter11.ExceptionApp_Example11_5();
             // CustomExceptionExample.RunExample();
-
+            /*
             Chapter12.Example_12_1();
             Chapter12.EnumerationExample();
             Chapter12.Example_12_2();
+            */
+            Chapter12_BinaryFiles.RunBinaryFileWriterExample();
+            Chapter12_BinaryFiles.RunBinaryFileReaderExample();
         }
     }
 
