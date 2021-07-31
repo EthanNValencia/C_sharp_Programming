@@ -171,6 +171,10 @@ namespace C_sharp_Programming
             StreamWriter outputFile = new StreamWriter("filename"); // writes to file
             StreamReader inputFile = new StreamReader("filename"); // reads from file
         }
+        /*
+         * Be sure to close all files before the application exits. This ensures that the data
+         * is usable for the next application. 
+         */
 
 
     }
