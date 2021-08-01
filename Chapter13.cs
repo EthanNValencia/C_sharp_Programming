@@ -1,6 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data.OleDb;
+/* 
+(if System.Data.OleDb is not functioning then do the following)
+Navigate to the Tools Tab
+Click NuGet Packet Manager
+Click Nuget Packet Manager Console // A command-line console should pop up at the bottom of Visual Studio
+Insert the following command
+Install-Package System.Data.OleDb
+*/
+
+
+
 /*
  * Chapter 13 - Database Access Using ADO.NET
  * - Be introduced to technologies used for accessing databases. 
@@ -56,7 +68,7 @@ using System.Text;
  */
 
 /*
- * System.Data.OleDb
+ * System.Data.OleDb -- This is for Microsoft Access Databases
  * OleDbConnection   - Establishes connection.
  * OleDbCommand      - Executes a command against a data source.
  * OleDbDataReader   - Performs an access of the data. (accessor)
@@ -67,5 +79,64 @@ namespace C_sharp_Programming
 {
     class Chapter13
     {
+        public static void AccessDatabaseExample_1() // Example 13-1, pg 763
+        {
+            string sConnection;
+            sConnection = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=member.mdb";
+            /*
+             * The Provider is the type of database: "Microsoft.Jet.OLEDB.4.0" refers to 
+             * the latest version, when this book was written, of Microsoft Access. 
+             * The Data Source, "member.mdb" indicates that a local copy of Microsoft
+             * SQL Server Express is being used. 
+             */
+            OleDbConnection dbConn;
+            dbConn = new OleDbConnection(sConnection);
+            dbConn.Open(); // Opens the connection.
+        }
+        public static void AccessDatabaseExample_2() // Example 13-2, pg 764
+        {
+            string sConnection; // Determining what goes in the Connection string is probably the most difficult part. 
+            sConnection = "Data Source=(local)\\SQLExpress;Initial Catalog=RealEstateDb;Integrated Security=True";
+            OleDbConnection dbConn;
+            dbConn = new OleDbConnection(sConnection);
+            dbConn.Open(); // Opens the connection.
+        }
+        /* 
+         * How to get a Connection string: 
+         * Go to Tools menu and select connect to the database and browse database from the Project Directory.
+         */
+        public static OleDbConnection AccessDatabaseConnection() // Example 13-2, pg 764
+        {
+            try
+            {
+                string sConnection; // Determining what goes in the Connection string is probably the most difficult part. 
+                sConnection = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Ethan\OneDrive\Documents\ExampleDatabase.accdb";
+                OleDbConnection dbConn;
+                dbConn = new OleDbConnection(sConnection);
+                // dbConn.Open(); // Opens the connection.
+                return dbConn;
+            }
+            catch
+            {
+                Console.WriteLine("Something went wrong.");
+            }
+            return null;
+        }
+
+        public static void AccessDatabaseQuery() // Example 13-3, pg 764
+        {
+            try
+            {
+                string sql;
+                sql = "SELECT * FRMOM memberTable ORDER BY LastName ASC, FirstName ASC;";
+                OleDbCommand dbCmd = new OleDbCommand();
+                dbCmd.CommandText = sql;
+                dbCmd.Connection = AccessDatabaseConnection(); // A resultset should be returned?
+            }
+            catch
+            {
+                Console.WriteLine("Something went wrong.");
+            }
+        }
     }
 }
