@@ -139,7 +139,7 @@ namespace C_sharp_Programming
             Chapter12_BinaryFiles.RunBinaryFileWriterExample();
             Chapter12_BinaryFiles.RunBinaryFileReaderExample();
             */
-            Chapter13.AccessDatabaseQuery();
+            // Chapter13.AccessDatabaseQuery();
            }
     }
 
